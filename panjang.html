@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Lebar</label>
+    <input type="number" id="lebar">
+    <label>Panjang</label>
+    <input type="number" id="panjang">
+    <h1 id="hasil"></h1>
+    <button onclick="hitung()">jumlahkan</button>
+    <script>
+        function hitung(){
+             var a = document.getElementById("lebar");
+            var b = document.getElementById("panjang");
+            var multiply = document.getElementById("hasil");
+            multiply.textContent = parseInt(a.value) * parseInt(b.value);
+
+        }
+    </script>
+</body> 
+</html>
